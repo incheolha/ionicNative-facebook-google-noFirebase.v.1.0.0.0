@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="logOut()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+               Homepage
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngIf="currentUserData">
+    <ion-card-header>
+      {{ currentUserData.uid }} {{ currentUserData.userName }}
+    </ion-card-header>
+    <img [src]="currentUserData.userPhotoUrl">
+    <ion-card-content>
+      <p>Email: {{ currentUserData.userEmail }}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ionicFacebookGoogle",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
